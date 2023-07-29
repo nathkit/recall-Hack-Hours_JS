@@ -1,0 +1,18 @@
+// Exercise #1: Decrease Student Scores
+let scores = [89, 70, 60, 50, 100, 71]
+// Start coding here
+// let updateScores = []
+// for (let i of scores) {
+//     updateScores.push(i - 10);
+// }
+// const updateScores = []
+// for (let i in scores) {
+//     updateScores[i] = scores[i] - 10;
+// }
+
+const updateScores = scores.map((score) => {
+    return score - 10;
+})
+
+scores = updateScores
+console.log(scores);
